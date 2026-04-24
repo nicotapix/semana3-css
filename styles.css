@@ -132,3 +132,21 @@ footer a {
   color: #1a1a2e;
   text-decoration: none;
 }
+
+nav a:hover{
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0f3460;
+  transition: background-color 0.3s ease;
+  transform: translate(-2px);
+}
+
+footer a:hover{
+  color: #0f3460;
+  transition: color 0.3s ease;
+}
