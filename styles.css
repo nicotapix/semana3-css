@@ -1,3 +1,16 @@
+:root {
+  --color-primary: #1a1a2e;
+  --color-secondary: #16213e;
+  --color-accent: #0f3460;
+  --color-background: #f5f5f5;
+  --color-white: #ffffff;
+  --color-text: #333333;
+  --color-text-muted: #888888;
+  --color-border: #dddddd;
+  --font-main: 'Inter', Arial, sans-serif;
+  --border-radius: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,8 +44,8 @@ p {
 }
 
 header  {
-    background-color: #1a1a2e;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     padding: 40px 20px;
     text-align: center;
 }
@@ -49,7 +62,7 @@ header h2 {
 }
 
 nav {
-    background-color: #16213e;
+    background-color: var(--color-secondary);
     padding: 15px 20px;
     text-align: center;
 }
@@ -112,11 +125,11 @@ textarea {
 }
 
 button {
-  background-color: #1a1a2e;
-  color: #ffffff;
+  background-color:var(--color-primary);
+  color: var(--color-white);
   border: none;
   padding: 12px 28px;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   font-size: 15px;
   cursor: pointer;
 }
@@ -141,7 +154,7 @@ nav a:hover{
 }
 
 button:hover {
-  background-color: #0f3460;
+  background-color: var(--color-accent);
   transition: background-color 0.3s ease;
   transform: translate(-2px);
 }
