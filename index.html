@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="Description" content="Página personal de Nico, estudiante de ingeniería informática aprendiendo frontend">
-    <title>Nico - Desarrollador Frontend</title>
-    <link href="https//fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">"
+    <title>Nico - Portafolio</title>
+    <link href="https//fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-
     <header>
+    <div class="header.texto">
       <h1>Hola, soy Nico</h1>
       <h2>Estudiante de Ingeniería Informática</h2>
+      </div>
+      <div class="header-imagen">
+        <img src = "imagenes/Nico.jpg" alt="Foto de perfil de Nicx">
+      </div>
     </header>
 
     <nav>
@@ -27,16 +31,30 @@
         <p>Soy de Villavicencio, Colombia. Estoy aprendiendo 
         desarrollo frontend y me apasiona crear cosas para la web.</p>
       </section>
-
       <section id="tecnologias">
         <h2>Lo que estoy aprendiendo</h2>
-        <ul>
-          <li>Git & GitHub</li>
-          <li>HTML semántico</li>
-          <li>CSS y Flexbox</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
+        <div class="cards-container">
+        <div class="card">
+          <h3>Git & Github</h3>
+          <p>control de versiones y trabajo en equipo.</p>
+        </div>
+        <div class="card">
+        <h3>HTML</h3>
+        <p>Estructura semantica de paginas web</p>  
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Estilos, layouts y diseño responsivo.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Interactividad y logica en el navegador.</p>
+        </div>
+        <div class="card">
+          <h3>React</h3>
+          <p>Interfaces modernas con componentes</p>
+          </div>
+        </div>
       </section>
 
       <section id="contacto">
