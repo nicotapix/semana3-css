@@ -272,3 +272,56 @@ html {
   border-radius: 20px;
   margin-right: 6px;
 }
+
+/* Tablet — menos de 768px */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 24px;
+  }
+
+  .header-imagen img {
+    width: 80px;
+    height: 80px;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móvil — menos de 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  nav {
+    gap: 16px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+  }
+}
