@@ -28,26 +28,34 @@ body {
   font-family: var(--font-main);
   font-size: 16px;
   color: var(--color-text);
-  background-color: var(--color-background);
+  background: linear-gradient(200deg, #0d1117 0%, #0d1117 60%, #1a0a2e 100%);
+  min-height: 100vh;
 }
 
 h1 {
   font-size: 36px;
-  color: #1a1a1a;
+  color: var(--color-white);
 }
 
 h2 {
   font-size: 24px;
-  color: #1a1a1a;
+  color: var(--color-white);
 }
 
 h3 {
   font-size: 20px;
-  color: #1a1a1a;
+  color: var(--color-white);
 }
 
 p {
   line-height: 1.6;
+}
+
+form label {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  margin-bottom: 6px;
 }
 
 header  {
@@ -159,13 +167,14 @@ textarea {
 }
 
 button {
-  background-color:var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--color-white);
   border: none;
   padding: 12px 28px;
   border-radius: var(--border-radius);
   font-size: 15px;
   cursor: pointer;
+  font-family: var(--font-main);
 }
 
 footer {
@@ -176,7 +185,7 @@ footer {
 }
 
 footer a {
-  color: #1a1a2e;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -273,6 +282,47 @@ html {
   margin-right: 6px;
 }
 
+.header-tag {
+  display: inline-block;
+  background-color: #1a0a2e;
+  color: var(--color-accent);
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.header-desc {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.header-botones {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 10px 24px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
 /* Tablet — menos de 768px */
 @media (max-width: 768px) {
   header {
@@ -285,6 +335,8 @@ html {
   }
 
   main {
+    max-width: 900px;
+    margin: 40px auto;
     padding: 0 16px;
   }
 
