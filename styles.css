@@ -76,8 +76,18 @@ header  {
   gap: 12px;
 }
 
+@keyframes gradiente-texto {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 0% 50%; }
+}
 header h1 {
-    color: var(--color-white);
+    background: linear-gradient(90deg, #ffffff, #7c3aed, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradiente-texto 1.5s ease infinite;
     margin-bottom: 10px;
 }
 
@@ -100,10 +110,10 @@ header h2 {
 
 .header-desc {
   color: var(--color-text-muted);
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 8px;
   margin-bottom: 24px;
-  max-width: 600px;
+  max-width: 700px;
   line-height: 1.7;
 }
 
