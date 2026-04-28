@@ -379,19 +379,19 @@ html {
     padding: 20px 24px;
   }
 
-  .header-imagen img {
+  .sobre-mi-img {
     width: 80px;
     height: 80px;
   }
 
-  main {
+  main { 
     max-width: 900px;
     margin: 40px auto;
     padding: 0 16px;
   }
 
   .cards-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .grid-proyectos {
@@ -400,7 +400,7 @@ html {
 }
 
 /* Móvil — menos de 480px */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 28px;
   }
